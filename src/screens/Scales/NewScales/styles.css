@@ -1,0 +1,22 @@
+  /* DateInput.css */
+
+  .input-container {
+    display: inline-block; /* ou block, conforme sua necessidade */
+    position: relative;
+  }
+  
+  /* Estilos para manter o estilo padrão do InputMask */
+  .input-container input {
+    font-family: inherit;
+    font-size: inherit;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 150px; /* ou o tamanho desejado */
+  }
+  
+  .input-container input:focus {
+    outline: none;
+    border-color: #007bff; /* ou a cor desejada quando o campo estiver focado */
+  }
+  

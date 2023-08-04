@@ -1,0 +1,55 @@
+/* const [currentPage, setCurrentPage] = useState(1);
+const [hasNextPage, setHasNextPage] = useState(true);
+const [itemsCount, setItemsCount] = useState<number>(0);
+
+const itemPages = 10; */
+
+
+/* const handleNextPage = useCallback(() => {
+    setCurrentPage(currentPage + 1);
+  }, [currentPage]);
+
+  const handleGetDoctors = useCallback(() => {
+    const page = currentPage;
+    let query = itemsRef.orderBy("nome").limit(itemPages);
+    if (page > 1) {
+      const lastItem = doctors[(page - 2) * itemPages];
+      query = query.startAfter(lastItem?.nome);
+    }
+    const unsubscribe = query.onSnapshot((snapshot) => {
+      const data: any = snapshot.docs.map((doc) => ({
+        id: doc.id,
+        ...doc.data(),
+      }));
+      setDoctors((prevDoctors) => {
+        if (page === 1) {
+          return data;
+        }
+        const start = (page - 1) * itemPages;
+        const end = start + itemPages;
+        const newDoctors = data.slice(0, itemPages);
+        const updatedDoctors = prevDoctors.slice(0, start).concat(newDoctors);
+        return updatedDoctors;
+      });
+      if (data.length < itemPages) {
+        setHasNextPage(false);
+      } else {
+        setHasNextPage(true);
+      }
+    });
+    return () => {
+      unsubscribe();
+    };
+  }, [currentPage, itemPages]);
+  
+
+  useEffect(() => {
+    setDoctors([]);
+    setCurrentPage(1);
+    setHasNextPage(true);
+  }, []);
+
+  useEffect(() => {
+    const unsubscribe = handleGetDoctors();
+    return unsubscribe;
+  }, [handleGetDoctors]); */

@@ -1,0 +1,100 @@
+.style-paginate {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .style-paginate li {
+    display: inline-block;
+    margin: 0 5px;
+  }
+  
+  .style-paginate li a {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #00a84d;
+    text-decoration: none;
+  }
+  
+  .style-paginate li a:hover {
+    background-color: #00a84d;
+    color: #ffff;
+  }
+  .select {
+    color: #000000;
+  }
+  
+
+  /* DateInput.css */
+
+.input-container {
+  display: inline-block; /* ou block, conforme sua necessidade */
+  position: relative;
+}
+
+/* Estilos para manter o estilo padrão do InputMask */
+.input-container input {
+  font-family: inherit;
+  font-size: inherit;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 150px; /* ou o tamanho desejado */
+}
+
+.input-container input:focus {
+  outline: none;
+  border-color: #00A84D; /* ou a cor desejada quando o campo estiver focado */
+}
+
+/* Estilizando o react-select */
+/* Estilizando o react-select */
+.select__control {
+  border-color: #ccc; /* Cor da borda do controle */
+  box-shadow: none !important; /* Remove a sombra do controle */
+}
+
+.select__option--is-selected {
+  background-color: #f0f0f0; /* Cor de fundo para o item selecionado */
+}
+
+.select__option--is-focused {
+  background-color: transparent !important; /* Remove a cor de fundo quando o item está em foco (hover) */
+  color: #000; /* Define a cor do texto quando o item está em foco (hover) */
+}
+
+/* Estilizando o estado "focused" do input do react-select */
+.select__control:focus {
+  border-color: #ccc; /* Define a cor da borda quando o input está em foco (hover) */
+  box-shadow: none !important; /* Remove a sombra quando o input está em foco (hover) */
+}
+
+/* Alterando a cor de seleção do react-select */
+.select__menu {
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 8px;
+  }
+
+  /* Cor de fundo quando um item é selecionado */
+  ::selection {
+    background-color: #f0f0f0;
+  }
+}
+
+/* Alterando a cor do texto do placeholder */
+.select__placeholder {
+  color: #999;
+}

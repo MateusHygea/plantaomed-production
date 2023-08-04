@@ -1,0 +1,29 @@
+.style-paginate {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .style-paginate li {
+    display: inline-block;
+    margin: 0 5px;
+  }
+  
+  .style-paginate li a {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #00a84d;
+    text-decoration: none;
+  }
+  
+  .style-paginate li a:hover {
+    background-color: #00a84d;
+    color: #ffff;
+  }
+  .select {
+    color: #000000;
+  }
